@@ -73,6 +73,7 @@ Este projeto é uma aplicação Spring Boot com Maven Wrapper. Os comandos abaix
 - JDK 17 instalado.
 - Variavel `JAVA_HOME` apontando para o JDK 17.
 - Acesso à internet na primeira execução, caso o Maven Wrapper precise baixar o Maven.
+- Spring Boot versão 4.0.6.
 
 Para confirmar a versão do Java:
 
