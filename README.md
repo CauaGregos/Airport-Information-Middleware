@@ -6,11 +6,11 @@ Projeto Spring Boot organizado em arquitetura em camadas.
 ```text
 com.example.iataicaoapp
 ├── client        # Acesso a API externa
-├── controller    # Entrada HTTP da aplicacao
+├── controller    # Entrada HTTP da aplicação
 ├── domain        # Modelos centrais do negocio
 ├── dto           # Objetos usados nas respostas/entradas da API
-├── exception     # Excecoes e tratamento global de erros
-└── service       # Regras de negocio e orquestracao
+├── exception     # Exceções e tratamento global de erros
+└── service       # Regras de negócio e orquestração
 ```
 
 ## Fluxo
@@ -47,8 +47,8 @@ Nessa aplicação foi utilizado o ChatGPT 5.5 e o InteliJ.
 Quais situações demandaram as consultas?
 
 ### Criação do observador de exceções global:
-Foi indicado o uso de um observador global para centralizar o tratamento do retorno de exceções que ocorrem no controller principal da aplicação
-Notanto ser uma ferramenta nativa do spring boot, optei por seguir com o uso. Com a notation *@RestControllerAdvice* preparamos a classe em contexto 
+Foi indicado o uso de um observador global para centralizar o tratamento do retorno de exceções que ocorrem no controller principal da aplicação.
+Notando ser uma ferramenta nativa do spring boot, optei por seguir com o uso. Com a notation *@RestControllerAdvice* preparamos a classe em contexto 
 para ouvir alguns eventos do controller que indicarmos. Adicionando a notation *@ExceptionHandler* num método dentro dessa classe, indicamos que vamos tomar uma ação, 
 sempre que uma exception do tipo que indicarmos for lançada.
 ### Montagem do template inicial dos testes:
@@ -72,7 +72,7 @@ Este projeto é uma aplicação Spring Boot com Maven Wrapper. Os comandos abaix
 
 - JDK 17 instalado.
 - Variavel `JAVA_HOME` apontando para o JDK 17.
-- Acesso a internet na primeira execução, caso o Maven Wrapper precise baixar o Maven.
+- Acesso à internet na primeira execução, caso o Maven Wrapper precise baixar o Maven.
 
 Para confirmar a versão do Java:
 
@@ -80,7 +80,7 @@ Para confirmar a versão do Java:
 java -version
 ```
 
-A versao deve ser Java 17.
+A versão deve ser Java 17.
 
 ## Windows CMD
 
@@ -150,7 +150,7 @@ Rodar apenas o teste do controller:
 ./mvnw -Dtest=AirportInformationControllerTest test
 ```
 
-Subir a aplicacao:
+Subir a aplicação:
 
 ```bash
 ./mvnw spring-boot:run
@@ -158,7 +158,7 @@ Subir a aplicacao:
 
 ## Testar a API manualmente
 
-Com a aplicacao rodando, acesse:
+Com a aplicação rodando, acesse:
 
 ```text
 http://localhost:8080/api/airport/codes/KATL
